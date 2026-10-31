@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilih Genre Favorit</title>
+</head>
+<body>
+    <header>
+        <h1>Formulir Genre Favorit</h1>
+        <p>Pilih genre Roblox yang paling ingin kamu coba.</p>
+    </header>
+
+    <nav aria-label="Navigasi utama">
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="genre.html">Daftar Genre</a></li>
+            <li><a href="favorit.html">Pilih Favorit</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Isi pilihanmu</h2>
+            <p>Formulir ini merupakan contoh HTML statis untuk mempraktikkan label dan validasi dasar. Data tidak dikirim ke server atau disimpan ke database.</p>
+
+            <form action="#" method="get">
+                <p>
+                    <label for="nama">Nama:</label>
+                    <input type="text" id="nama" name="nama" autocomplete="name" required>
+                </p>
+
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" autocomplete="email" required>
+                </p>
+
+                <fieldset>
+                    <legend>Pilih genre favorit:</legend>
+                    <p>
+                        <input type="radio" id="obby" name="genre" value="Obby" required>
+                        <label for="obby">Obby</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="simulator" name="genre" value="Simulator">
+                        <label for="simulator">Simulator</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="roleplay" name="genre" value="Roleplay">
+                        <label for="roleplay">Roleplay</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="survival" name="genre" value="Survival">
+                        <label for="survival">Survival</label>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <label for="alasan">Alasan memilih genre (opsional):</label>
+                    <textarea id="alasan" name="alasan" rows="4" cols="40"></textarea>
+                </p>
+
+                <button type="submit">Kirim Pilihan</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="index.html">Kembali ke beranda</a></p>
+        <p>Proyek praktikum Desain Web - Fabian Diaz Adam - 202532004</p>
+    </footer>
+</body>
+</html>
